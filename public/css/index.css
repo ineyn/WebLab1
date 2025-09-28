@@ -1,12 +1,10 @@
 /* ===============================
-          ЗАГАЛЬНІ СТИЛІ
+              ОСНОВА
    =============================== */
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
+    font-family: 'Noto Sans';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -22,9 +20,7 @@ body {
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-/* ===============================
-             ШАПКА САЙТУ
-   =============================== */
+/* Header */
 
 header {
     background: linear-gradient(135deg, #2c3e50, #3498db);
@@ -115,7 +111,7 @@ section {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 200px;
     height: 3px;
     background: linear-gradient(135deg, #3498db, #2c3e50);
     border-radius: 2px;
@@ -125,7 +121,7 @@ section {
      СТОРІНКА КОНТАКТІВ - СЕКЦІЇ
    =============================== */
 
-/* Героїчна секція */
+/* hero секції */
 .hero-section {
     text-align: center;
     padding: 60px 40px;
@@ -149,7 +145,7 @@ section {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 500px;
     height: 3px;
     background: linear-gradient(135deg, #3498db, #2c3e50);
     border-radius: 2px;
@@ -320,7 +316,7 @@ section {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
+    width: 160px;
     height: 3px;
     background: linear-gradient(135deg, #3498db, #2c3e50);
     border-radius: 2px;
@@ -357,6 +353,8 @@ select {
     font-size: 1em;
     transition: all 0.3s ease;
     background: #f8f9fa;
+    min-width: 550px;
+    min-height: 50px;
 }
 
 input[type="text"]:focus,
@@ -405,12 +403,6 @@ input[type="checkbox"] {
     width: 18px;
     height: 18px;
     accent-color: #3498db;
-}
-
-/* Текстові області */
-textarea {
-    min-height: 120px;
-    resize: vertical;
 }
 
 /* Кнопки */
