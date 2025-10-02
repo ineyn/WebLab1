@@ -11,11 +11,11 @@
 <body>
     <div id="root"></div>
     <div class="container">
-        <header>
+        <header class="fixed-menu">
             <h1>ТАРАС ШЕВЧЕНКО</h1>
             <nav>
                 <a href="#plot">БІОГРАФІЯ ТА ТВОРЧІСТЬ</a>
-                <a href="#crew">ЗЙОМАЛЬНА ГРУПА</a>
+                <a href="#crew">ДОСЛІДНИКИ ТА ЛІТЕРАТУРОЗНАВЦІ</a>
                 <a href="#photos">ФОТО</a>
                 <a href="#awards">НАГОРОДИ</a>
                 <a href="contact.html">КОНТАКТИ</a>
@@ -29,7 +29,7 @@
             <section id="plot" class="plot-section">
                 <h2 class="section-title">БІОГРАФІЯ ТА ТВОРЧІСТЬ</h2>
                 <p class="plot-text">
-                    Тарас Григорович Шевченко (1814-1861) — <em>великий український поет, прозаїк, драматург, художник</em>, громадський і політичний діяч, засновник української реалістичної літератури. Народився <mark>9 березня 1814 року в селі Моринці</mark> на Черкащині в селянській родині кріпаків.
+                    Тарас Григорович Шевченко (1814 - 1861) — <em>великий український поет, прозаїк, драматург, художник</em>, громадський і політичний діяч, засновник української реалістичної літератури. Народився <mark>9 березня 1814 року в селі Моринці</mark> на Черкащині в селянській родині кріпаків.
                 </p>
                 <div class="quote">
                     "Борітеся — поборете! <br>
@@ -65,32 +65,32 @@
                 <h4 class="section-title">ФОТО</h4>
                 <div class="photo-grid">
 
-                    <div class="photo-card">    <!-- Картинка звичайна -->
+                    <div class="photo-card">    <!-- 1. Картинка звичайна -->
                         <img src="images/Taras_Shevchenko.jpg", alt='Тарас Шевченко>'>
                         <p>Портрет Тараса Шевченка<br>роботи Івана Крамського<br>(1871 рік)<br><br>Один з найвідоміших<br>портретів великого<br>українського поета</p>
                     </div>
 
-                    <div class="photo-card">    <!-- Картинка-посилання на іншу сторінку -->
+                    <div class="photo-card">    <!-- 2. Картинка-посилання на іншу сторінку -->
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Taras_Shevchenko_selfportrait_oil_1840-2.jpg/250px-Taras_Shevchenko_selfportrait_oil_1840-2.jpg" alt="Тарас Шевченко">
                         <p>Перший автопортрет Тараса Шевченка</p>
                     </div>
 
-                    <div class="photo-card-museum">    
+                    <div class="photo-card-museum"> <!-- 3. Картинка розділена на переходи до інших сторінок -->    
                         <img src="https://telegraf.com.ua/static/storage/thumbs/700-*/5/c3/6c2dbfbf-a4645510abac778aea47c60cb7566c35.webp?v=8849_1", alt="Музей на місці, де жив Шевченко"
                              usemap="#photo-map" 
                              class="mapped-image">
 
                         <map name="photo-map">
-                            <!-- Ліва частина картинки -->
+                            <!-- Верхня частина картинки -->
                             <area shape="rect" 
                                   coords="0,0,333,200"
                                   href="contact.html", alt="Контакти">
 
-                            <!-- Права частина картинки -->
+                            <!-- Нижня частина картинки -->
                             <area shape="rect" 
                                   coords="0,200,700,400" 
-                                  href="https://schedule.kpi.ua/?groupId=110db52f-b0b7-4e17-aef7-556735066774", alt="Посилання на розклад гр. ТР-41"
-                                  target="_blank">
+                                  href="https://schedule.kpi.ua/?groupId=110db52f-b0b7-4e17-aef7-556735066774", alt="Посилання на розклад гр. ТР-41">
+                                  <!-- target="_blank" чи треба?-->
                         </map>
 
                         <p>Хата в селі Моринці,<br>де народився поет<br><br>Зараз тут розташований<br>музей-садиба<br>Тараса Шевченка<br><br><small>Можна відвідати<br>та дізнатися більше<br>натиснувши на частину картинки</small></p>
