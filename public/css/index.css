@@ -414,6 +414,16 @@ area {
       ФОРМИ АВТОРИЗАЦІЇ
    =============================== */
 
+.auth-menu{
+    background: white;
+    font-size: 1.1em;
+}
+
+.auth-menu a{
+    color: #2c3e50;
+    background: rgba(44, 62, 80, 0.1);
+}
+
 .auth-section {
     background: white;
     padding: 40px;
@@ -532,8 +542,16 @@ select {
     font-size: 1em;
     transition: all 0.3s ease;
     background: #f8f9fa;
-    min-width: 550px;
+    max-width: 340px;
     min-height: 50px;
+}
+
+/* Для форми зворотного зв'язку окремо */
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea,
+.form-section select {
+    min-width: 550px;
 }
 
 input[type="text"]:focus,
@@ -549,7 +567,7 @@ select:focus {
 }
 
 /* Валідація - valid */
-input:valid:not([type="radio"]):not([type="checkbox"]) {
+input:valid:not(:placeholder-shown):not([type="radio"]):not([type="checkbox"]):not([type="date"]) {
     border-color: #28a745;
 }
 
@@ -558,7 +576,7 @@ input:valid:focus {
 }
 
 /* Валідація - invalid */
-input:invalid:not(:placeholder-shown):not([type="radio"]):not([type="checkbox"]) {
+input:invalid:not(:placeholder-shown):not([type="radio"]):not([type="checkbox"]):not([type="date"]) {
     border-color: #dc3545;
 }
 
@@ -622,13 +640,25 @@ button {
     min-width: 140px;
 }
 
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0) scale(0.98);
+}
+
+button:focus {
+    outline: 3px solid rgba(52, 152, 219, 0.5);
+    outline-offset: 2px;
+}
+
 button[type="submit"] {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
 }
 
 button[type="submit"]:hover {
-    transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
 
@@ -638,7 +668,6 @@ button[type="reset"] {
 }
 
 button[type="reset"]:hover {
-    transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
 }
 
